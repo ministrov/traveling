@@ -1,0 +1,58 @@
+.places-cards__title {
+  width: 358px;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: -1.25px;
+  color: $darker-black;
+}
+
+.places-cards__text {
+  width: 361px;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.46px;
+  color: $dark-grey;
+}
+
+.places-cards__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  margin-top: 56px;
+  padding: 0;
+  list-style: none;
+}
+
+.places-cards__item {
+  position: relative;
+  width: 350px;
+  height: 430px;
+  margin-right: 60px;
+  margin-bottom: 97px;
+}
+
+.places-cards__item:nth-child(3n),
+.places-cards__item:last-child {
+  margin-right: 0;
+}
+
+.places-cards__block {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 215px;
+  height: 63px;
+  line-height: 58px;
+  text-align: center;
+  background-color: $white;
+  transform: translateX(-50%);
+}
+
+.places-cards__country-name {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  color: $darker-black;
+}

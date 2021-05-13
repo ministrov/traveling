@@ -1,0 +1,54 @@
+.main-header {
+  max-height: 99px;
+}
+
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 39px;
+}
+
+.main-header__right-block {
+  display: flex;
+}
+
+.main-header__list {
+  display: flex;
+  margin: 0;
+  margin-top: 4px;
+  margin-right: 53px;
+  padding: 0;
+  list-style: none;
+}
+
+.main-header__item {
+  margin-right: 40px;
+}
+
+.main-header__item:last-child {
+  margin-right: 0;
+}
+
+.main-header__link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  color: $dark-black;
+}
+
+.main-header__link:hover {
+  color: $buttons;
+}
+
+.main-header__phone {
+  font-size: 18px;
+  line-height: 32px;
+  text-decoration: underline;
+  color: $dark-black;
+  cursor: pointer;
+}
+
+.main-header__phone:hover {
+  color: $buttons;
+}

@@ -1,0 +1,58 @@
+.feedback__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.feedback__form-col {
+  position: absolute;
+  top: 50%;
+  left: 512px;
+  z-index: 12;
+  width: 656px;
+  height: 315px;
+  padding: 50px;
+  text-align: center;
+  background-color: $white;
+  transform: translateY(-50%);
+}
+
+.feedback__img-col {
+  margin-right: auto;
+}
+
+.feedback__slogan {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 32px;
+  color: $dark-black;
+}
+
+.feedback__text {
+  font-size: 16px;
+  line-height: 24px;
+  color: $dark-black;
+}
+
+input[type="tel"],
+input[type="email"] {
+  display: inline-block;
+  max-height: 50px;
+  width: 269px;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  padding-left: 51px;
+  padding-right: 16px;
+  border-color: $grey;
+}
+
+.feedback__btn {
+  width: 176px;
+  height: 50px;
+  margin-top: 30px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  border: none;
+}

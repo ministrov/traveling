@@ -1,5 +1,5 @@
 {
-  "name": "adaptiv_sedona",
+  "name": "travelling",
   "version": "1.0.0",
   "description": "Hello wold!!!",
   "main": "gulpfile.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ministrov/adaptiv_sedona"
+    "url": "git+https://github.com/ministrov/traveling"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ministrov/adaptiv_sedona/issues"
+    "url": "https://github.com/ministrov/traveling/issues"
   },
-  "homepage": "https://github.com/ministrov/adaptiv_sedona#readme",
+  "homepage": "https://github.com/ministrov/traveling#readme",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "^9.8.4",

@@ -1,0 +1,61 @@
+.places-desc__tabs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.places-desc__tab {
+  margin-right: 99px;
+}
+
+.places-desc__tab a {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.415px;
+  color: $light-grey;
+}
+
+.places-desc__tab--active a {
+  color: $buttons;
+}
+
+.places-desc__tab:last-child {
+  margin-right: 0;
+}
+
+.places-desc__wrapper {
+  display: flex;
+}
+
+.places-desc__title {
+  margin-top: 110px;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 90px;
+  color: $darker-black;
+}
+
+.places-desc__text {
+  width: 370px;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.47px;
+  color: $dark-black;
+}
+
+.places-desc__btn {
+  width: 250px;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 31px;
+  text-transform: uppercase;
+}
+
+.places-desc__img-col {
+  position: relative;
+  margin-top: 80px;
+  margin-left: 100px;
+}
