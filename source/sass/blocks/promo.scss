@@ -29,10 +29,24 @@
 }
 
 .promo__btn {
+  position: relative;
+  width: 340px;
   margin-top: 39px;
   padding-top: 24px;
   padding-bottom: 25px;
   padding-left: 30px;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.promo__btn::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 272px;
+  width: 14px;
+  height: 18px;
+  background-image: url("../img/arrow-right.svg");
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
 }

@@ -1,4 +1,5 @@
 .places-cards__title {
+  position: relative;
   width: 358px;
   font-size: 55px;
   font-weight: 600;
@@ -7,8 +8,19 @@
   color: $darker-black;
 }
 
+.places-cards__title::before {
+  position: absolute;
+  content: "";
+  top: 180px;
+  left: 0;
+  width: 228px;
+  height: 4px;
+  background-color: $buttons;
+}
+
 .places-cards__text {
   width: 361px;
+  margin-top: 64px;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 0.46px;

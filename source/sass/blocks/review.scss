@@ -10,6 +10,7 @@
 }
 
 .review__title {
+  position: relative;
   font-size: 30px;
   font-weight: 500;
   line-height: 120%;
@@ -17,7 +18,18 @@
   color: $darker-black;
 }
 
+.review__title::before {
+  position: absolute;
+  content: "";
+  top: 49px;
+  left: 0;
+  width: 68px;
+  height: 0.73px;
+  background-color: $buttons;
+}
+
 .review__text {
+  margin-top: 32px;
   font-size: 14px;
   line-height: 28px;
   letter-spacing: -0.41px;

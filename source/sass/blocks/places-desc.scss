@@ -1,3 +1,24 @@
+.places-desc {
+  background-image: url("../img/map.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.places-desc__header {
+  position: relative;
+}
+
+.places-desc__header::after {
+  position: absolute;
+  content: "";
+  top: 38px;
+  left: 0;
+  width: 899px;
+  height: 1px;
+  background-color: $light-grey;
+}
+
+
 .places-desc__tabs {
   display: flex;
   margin: 0;
@@ -30,6 +51,7 @@
 }
 
 .places-desc__title {
+  position: relative;
   margin-top: 110px;
   font-size: 55px;
   font-weight: 600;
@@ -37,8 +59,19 @@
   color: $darker-black;
 }
 
+.places-desc__title::after {
+  position: absolute;
+  content: "";
+  top: 108px;
+  left: 0;
+  width: 175px;
+  height: 2.92px;
+  background-color: $buttons;
+}
+
 .places-desc__text {
   width: 370px;
+  margin-top: 53px;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: -0.47px;

@@ -6,20 +6,8 @@
   margin-right: 129px;
 }
 
-.main-footer__seciton:nth-child(2) {
-  margin-right: 89px;
-}
-
-.main-footer__seciton ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.main-footer__seciton ul a {
-  font-size: 14px;
-  line-height: 17px;
-  color: $buttons;
+.main-footer__seciton-contacts {
+  margin-right: 94px;
 }
 
 .main-footer__section-title {
@@ -30,15 +18,15 @@
 }
 
 .main-footer__section-list {
-  display: flex;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
+  columns: 3;
 }
 
 .main-footer__section-item {
   margin-right: 30px;
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 17px;
   color: $dark-black-light;
