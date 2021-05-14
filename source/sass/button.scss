@@ -6,4 +6,8 @@
   vertical-align: middle;
   color: $white;
   background-color: $buttons;
+
+  &:hover {
+    background-color: $orange;
+  }
 }

@@ -73,22 +73,24 @@
   list-style: none;
 }
 
-.prices__item:first-child {
-  margin-right: 30px;
-  padding-top: 40px;
-  padding-bottom: 30px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border: 3px solid $buttons;
-}
-
-.prices__item:last-child {
-  margin-right: 111px;
+.prices__item {
   padding-top: 40px;
   padding-bottom: 30px;
   padding-left: 15px;
   padding-right: 15px;  
   border: 3px solid $light-grey;
+
+  &:hover {
+    border: 3px solid $buttons;
+  }
+}
+
+.prices__item:first-child {
+  margin-right: 30px;
+}
+
+.prices__item:last-child {
+  margin-right: 111px;
 }
 
 .prices__item > ul {
@@ -111,28 +113,26 @@
   left: -42px;
   width: 22px;
   height: 22px;
-  background-image: url("../img/tick.svg");
+  background-image: url("../img/tick2.svg");
   background-repeat: no-repeat;
 }
 
-.prices__item:last-child ul li::before {
-  width: 14px;
-  height: 12px;
-  background-image: url("../img/tick2.svg");
+.prices__item ul li:hover::before {
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
 }
 
 .prices__item-title {
   font-size: 28px;
-  line-height: 34px;
-  color: $buttons;
-}
-
-.prices__item-title--disabled {
-  font-size: 28px;
   font-weight: 600;
   line-height: 38px;
   color: $dark-black-mix;
+
+  &:hover {
+    color: $buttons;
+  }
 }
 
 .prices__item-text {

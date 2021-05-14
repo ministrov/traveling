@@ -65,6 +65,8 @@ a {
   vertical-align: middle;
   color: #ffffff;
   background-color: #fe7865; }
+  .button:hover {
+    background-color: #f17d4b; }
 
 .container {
   min-width: 1024px;
@@ -447,21 +449,20 @@ a {
   padding: 0;
   list-style: none; }
 
-.prices__item:first-child {
-  margin-right: 30px;
-  padding-top: 40px;
-  padding-bottom: 30px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border: 3px solid #fe7865; }
-
-.prices__item:last-child {
-  margin-right: 111px;
+.prices__item {
   padding-top: 40px;
   padding-bottom: 30px;
   padding-left: 15px;
   padding-right: 15px;
   border: 3px solid rgba(44, 46, 63, 0.3); }
+  .prices__item:hover {
+    border: 3px solid #fe7865; }
+
+.prices__item:first-child {
+  margin-right: 30px; }
+
+.prices__item:last-child {
+  margin-right: 111px; }
 
 .prices__item > ul {
   margin-top: 59px;
@@ -481,25 +482,22 @@ a {
   left: -42px;
   width: 22px;
   height: 22px;
-  background-image: url("../img/tick.svg");
+  background-image: url("../img/tick2.svg");
   background-repeat: no-repeat; }
 
-.prices__item:last-child ul li::before {
-  width: 14px;
-  height: 12px;
-  background-image: url("../img/tick2.svg");
+.prices__item ul li:hover::before {
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat; }
 
 .prices__item-title {
   font-size: 28px;
-  line-height: 34px;
-  color: #fe7865; }
-
-.prices__item-title--disabled {
-  font-size: 28px;
   font-weight: 600;
   line-height: 38px;
   color: rgba(20, 21, 23, 0.7); }
+  .prices__item-title:hover {
+    color: #fe7865; }
 
 .prices__item-text {
   width: 284px;
@@ -647,5 +645,75 @@ input[placeholder] {
   font-size: 14px;
   line-height: 17px;
   color: #fe7865; }
+
+.modal {
+  display: none;
+  width: 728px;
+  height: 444px; }
+
+.modal--success {
+  position: relative;
+  padding-top: 179px;
+  padding-bottom: 179px;
+  background-color: #fbf8f8; }
+
+.modal--buy {
+  position: relative;
+  margin-top: 70px;
+  background-color: #fbf8f8; }
+
+.modal-form__wrapper {
+  display: flex;
+  flex-direction: row-reverse; }
+
+.modal__form-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.modal__title {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 42px;
+  color: #48494d; }
+
+.modal__login {
+  margin-top: 39px;
+  margin-left: 66px; }
+
+.modal__login input {
+  margin-bottom: 20px; }
+
+.modal__login input:last-child {
+  margin-bottom: 0; }
+
+.modal__text {
+  width: 399px;
+  margin: 0 auto;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 170%;
+  text-align: center;
+  color: #48494d; }
+
+.modal__btn--success {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.modal__btn--submit {
+  width: 176px;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 14px;
+  border: none; }
 
 /*# sourceMappingURL=style.css.map */

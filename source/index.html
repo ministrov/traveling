@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>Страница сайта о путешествии по Европе</title>
 </head>
@@ -139,7 +139,7 @@
                   <a class="prices__btn button" href="#">купить тур сейчас</a>
                 </li>
                 <li class="prices__item">
-                  <h3 class="prices__item-title prices__item-title--disabled">Экономный<span><span>&#36</span>1399</span></h3>
+                  <h3 class="prices__item-title">Экономный<span><span>&#36</span>1399</span></h3>
                   <p class="prices__item-text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
                   <ul>
                     <li>Разработанный маршрут с гидом группы</li>
@@ -222,5 +222,31 @@
        </div>
      </div>
    </footer>
+
+   <section class="modal modal--success">
+     <h2 class="visually-hidden">Форма успешной отправки</h2>
+     <p class="modal__text">Форма успешно отправлена, спасибо! :)</p>
+     <button class="modal__btn--success visually-hidden" type="button">Закрыть окно</button>
+   </section>
+
+   <section class="modal modal--buy">
+     <h2 class="visually-hidden">Форма покупки тура</h2>
+     <div class="modal-form__wrapper">
+       <div class="modal__form-col">
+         <h3 class="modal__title">Купить тур</h3>
+         <form class="modal__login" method="POST" action="#">
+          <label class="visually-hidden" for="phone">Номер телефона</label>
+          <input type="tel" name="phone" id="phone" placeholder="+7 Введите 10 цифр номера">
+          <label class="visually-hidden" for="email">email</label>
+          <input type="email" name="email" id="email" placeholder="E-mail">
+         </form>
+          <button class="modal__btn--submit button" type="submit">отправить</button>
+        </div>
+      <button class="modal__btn--buy visually-hidden" type="button">Закрыть окно</button>
+      <div class="modal__col-img">
+        <img class="modal__img" src="img/modal-img.jpg" width="338" height="444" alt="Вид берега моря">
+      </div>
+     </div>
+   </section>
 </body>
 </html>
