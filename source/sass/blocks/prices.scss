@@ -8,6 +8,7 @@
 }
 
 .prices__list-col {
+  flex-grow: 1;
   width: 770px;
 }
 
@@ -152,5 +153,5 @@
 }
 
 .prices__item:first-child .prices__btn {
-  margin-top: 74px;
+  margin-top: 40px;
 }

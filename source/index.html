@@ -40,49 +40,49 @@
       <section class="page-main__places-cards places-cards">
         <div class="container">
           <h2 class="places-cards__title">Места посещения</h2>
-        <p class="places-cards__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
-        <ul class="places-cards__list">
-          <li class="places-cards__item">
-            <a class="places-cards__link" href="#">
-              <img class="places-cards__img" src="img/places-card-img1.jpg" width="350" height="430" alt="Красивый вид на утес в Греции">
-            </a>
-            <div class="places-cards__block">
-              <span class="places-cards__country-name">Греция</span>
-            </div>
-          </li>
-          <li class="places-cards__item">
-            <a class="places-cards__img" href="#">
-              <img class="places-cards__img" src="img/places-card-img2.jpg" width="350" height="430" alt="Вид сверху на берег моря с отелем в Албании">
-            </a>
-            <div class="places-cards__block">
-              <span class="places-cards__country-name">Албания</span>
-            </div>
-          </li>
-          <li class="places-cards__item">
-            <a class="places-cards__img" href="#">
-              <img class="places-cards__img" src="img/places-card-img3.jpg" width="350" height="430" alt="Снимок моря и красивого здания в Македонии">
-            </a>
-            <div class="places-cards__block">
-              <span class="places-cards__country-name">Македония</span>
-            </div>    
-          </li>
-          <li class="places-cards__item">
-            <a class="places-cards__img" href="#">
-              <img class="places-cards__img" src="img/places-card-img4.jpg" width="350" height="430" alt="Вид сверху на реку между массива деревьев в Черногории">
-            </a>
-            <div class="places-cards__block">
-              <span class="places-cards__country-name">Черногория</span>
-            </div>    
-          </li>
-          <li class="places-cards__item">
-            <a class="places-cards__img" href="#">
-              <img class="places-cards__img" src="img/places-card-img5.jpg" width="350" height="430" alt="Пещера в Хорватии">
-            </a>
-            <div class="places-cards__block">
-              <span class="places-cards__country-name">Хорватия</span>
-            </div>    
-          </li>
-        </ul>
+          <p class="places-cards__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+          <ul class="places-cards__list">
+            <li class="places-cards__item">
+              <a class="places-cards__link" href="#">
+                <img class="places-cards__img" src="img/places-card-img1.jpg" width="350" height="430" alt="Красивый вид на утес в Греции">
+                <div class="places-cards__block">
+                  <span class="places-cards__country-name">Греция</span>
+                </div>
+              </a>
+            </li>
+            <li class="places-cards__item">
+              <a class="places-cards__link" href="#">
+                <img class="places-cards__img" src="img/places-card-img2.jpg" width="350" height="430" alt="Вид сверху на берег моря с отелем в Албании">
+                <div class="places-cards__block">
+                  <span class="places-cards__country-name">Албания</span>
+                </div>
+              </a>
+            </li>
+            <li class="places-cards__item">
+              <a class="places-cards__link" href="#">
+                <img class="places-cards__img" src="img/places-card-img3.jpg" width="350" height="430" alt="Снимок моря и красивого здания в Македонии">
+                <div class="places-cards__block">
+                  <span class="places-cards__country-name">Македония</span>
+                </div> 
+              </a>   
+            </li>
+            <li class="places-cards__item">
+              <a class="places-cards__link" href="#">
+                <img class="places-cards__img" src="img/places-card-img4.jpg" width="350" height="430" alt="Вид сверху на реку между массива деревьев в Черногории">
+                <div class="places-cards__block">
+                  <span class="places-cards__country-name">Черногория</span>
+                </div>
+              </a>  
+            </li>
+            <li class="places-cards__item">
+              <a class="places-cards__link" href="#">
+                <img class="places-cards__img" src="img/places-card-img5.jpg" width="350" height="430" alt="Пещера в Хорватии">
+                <div class="places-cards__block">
+                  <span class="places-cards__country-name">Хорватия</span>
+                </div> 
+              </a>   
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -165,7 +165,7 @@
               <p class="feedback__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
               <form class="feedback__login" method="POST" action="#">
                 <label class="visually-hidden" for="phone">Номер телефона</label>
-                <input type="tel" name="phone" id="phone" placeholder="+7 Введите 10 цифр номера">
+                <input type="tel" name="phone" id="phone" placeholder="+7 Введите 10 цифр номера" pattern="\+7\s\([0-9]{3}\)\s\d{3}[-]\d{2}[-]\d{2}" required>
                 <label class="visually-hidden" for="email">email</label>
                 <input type="email" name="email" id="email" placeholder="E-mail">
                 <button class="feedback__btn button" type="submit">отправить</button>

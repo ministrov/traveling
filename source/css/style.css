@@ -72,6 +72,9 @@ a {
   min-width: 1024px;
   width: 1170px;
   margin: 0 auto; }
+  @media (min-width: 768px) {
+    .container {
+      width: 620px; } }
 
 .main-header {
   max-height: 99px; }
@@ -157,6 +160,14 @@ a {
   background-position: 100%;
   background-size: cover;
   background-repeat: no-repeat; }
+  @media (min-width: 768px) {
+    .promo {
+      min-width: 768px;
+      height: 554px;
+      padding-top: 60px;
+      padding-bottom: 83px;
+      padding-left: 185px;
+      padding-right: 185px; } }
 
 .promo__title {
   width: 325px;
@@ -206,6 +217,10 @@ a {
   line-height: 80px;
   letter-spacing: -1.25px;
   color: #2c2e3f; }
+  @media (min-width: 768px) {
+    .places-cards__title {
+      width: 301px;
+      text-align: center; } }
 
 .places-cards__title::before {
   position: absolute;
@@ -215,6 +230,9 @@ a {
   width: 228px;
   height: 4px;
   background-color: #fe7865; }
+  @media (min-width: 768px) {
+    .places-cards__title::before {
+      display: none; } }
 
 .places-cards__text {
   width: 361px;
@@ -338,6 +356,7 @@ a {
 
 .places-desc__img-col {
   position: relative;
+  flex-grow: 1;
   margin-top: 80px;
   margin-left: 100px; }
 
@@ -392,6 +411,7 @@ a {
   margin-top: 77px; }
 
 .prices__list-col {
+  flex-grow: 1;
   width: 770px; }
 
 .prices__title {
@@ -514,7 +534,7 @@ a {
   text-transform: uppercase; }
 
 .prices__item:first-child .prices__btn {
-  margin-top: 74px; }
+  margin-top: 40px; }
 
 .feedback__wrapper {
   position: relative;
@@ -564,6 +584,9 @@ input[placeholder] {
   font-weight: inherit;
   line-height: 15px;
   color: #141517; }
+
+input:invalid {
+  border-color: #fe7865; }
 
 .feedback__btn {
   width: 176px;
