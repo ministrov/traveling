@@ -69,12 +69,11 @@ a {
     background-color: #f17d4b; }
 
 .container {
-  min-width: 1024px;
   width: 1170px;
   margin: 0 auto; }
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     .container {
-      width: 620px; } }
+      width: 660px; } }
 
 .main-header {
   max-height: 99px; }
@@ -84,6 +83,10 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-top: 39px; }
+
+@media (max-width: 768px) {
+  .main-header__wrapper {
+    max-width: 768px; } }
 
 .main-header__right-block {
   display: flex; }
@@ -137,9 +140,7 @@ a {
   color: #fe7865; }
 
 .page-main__promo {
-  margin-top: 38px;
-  padding-top: 185px;
-  padding-left: 684px; }
+  margin-top: 38px; }
 
 .page-main__places-cards {
   margin-top: 199px; }
@@ -155,19 +156,21 @@ a {
 
 .promo {
   height: 860px;
+  padding-top: 185px;
+  padding-left: 684px;
   background-color: #e5e5e5;
   background-image: url("../img/aleyna-rentz.jpg");
   background-position: 100%;
   background-size: cover;
   background-repeat: no-repeat; }
-  @media (min-width: 768px) {
-    .promo {
-      min-width: 768px;
-      height: 554px;
-      padding-top: 60px;
-      padding-bottom: 83px;
-      padding-left: 185px;
-      padding-right: 185px; } }
+
+@media (max-width: 768px) {
+  .promo {
+    max-height: 554px;
+    padding-top: 60px;
+    padding-bottom: 83px;
+    padding-left: 185px;
+    padding-right: 185px; } }
 
 .promo__title {
   width: 325px;
@@ -217,10 +220,6 @@ a {
   line-height: 80px;
   letter-spacing: -1.25px;
   color: #2c2e3f; }
-  @media (min-width: 768px) {
-    .places-cards__title {
-      width: 301px;
-      text-align: center; } }
 
 .places-cards__title::before {
   position: absolute;
@@ -230,9 +229,10 @@ a {
   width: 228px;
   height: 4px;
   background-color: #fe7865; }
-  @media (min-width: 768px) {
-    .places-cards__title::before {
-      display: none; } }
+
+@media (max-width: 768px) {
+  .places-cards__title::before {
+    display: none; } }
 
 .places-cards__text {
   width: 361px;
@@ -603,12 +603,15 @@ input:invalid {
   display: flex; }
 
 .main-footer__seciton {
-  margin-right: 129px; }
+  flex-grow: 1;
+  width: 25%;
+  margin-right: 82px; }
 
 .main-footer__seciton-contacts {
   margin-right: 94px; }
 
 .main-footer__section-title {
+  width: 301px;
   font-size: 18px;
   font-weight: 600;
   line-height: 32px;
@@ -631,7 +634,7 @@ input:invalid {
 .main-footer__section-text {
   width: 320px;
   font-size: 14px;
-  font-weight: 24px;
+  font-weight: 500;
   color: rgba(20, 21, 23, 0.5); }
 
 .contacts__list {

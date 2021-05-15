@@ -6,11 +6,6 @@
   line-height: 80px;
   letter-spacing: -1.25px;
   color: $darker-black;
-
-  @media (min-width: $tablet-width) {
-    width: 301px;
-    text-align: center;
-  }
 }
 
 .places-cards__title::before {
@@ -21,8 +16,10 @@
   width: 228px;
   height: 4px;
   background-color: $buttons;
+}
 
-  @media (min-width: $tablet-width) {
+@media (max-width: $tablet-width) {
+  .places-cards__title::before {
     display: none;
   }
 }

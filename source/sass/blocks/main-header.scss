@@ -9,6 +9,12 @@
   margin-top: 39px;
 }
 
+@media (max-width: $tablet-width) {
+  .main-header__wrapper {
+    max-width: 768px;
+  }
+}
+
 .main-header__right-block {
   display: flex;
 }

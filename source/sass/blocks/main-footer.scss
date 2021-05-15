@@ -3,7 +3,9 @@
 }
 
 .main-footer__seciton {
-  margin-right: 129px;
+  flex-grow: 1;
+  width: 25%;
+  margin-right: 82px;
 }
 
 .main-footer__seciton-contacts {
@@ -11,6 +13,7 @@
 }
 
 .main-footer__section-title {
+  width: 301px;
   font-size: 18px;
   font-weight: 600;
   line-height: 32px;
@@ -35,6 +38,6 @@
 .main-footer__section-text {
   width: 320px;
   font-size: 14px;
-  font-weight: 24px;
+  font-weight: 500;
   color: $dark-black-light;
 }

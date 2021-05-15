@@ -1,14 +1,17 @@
 .promo {
   height: 860px;
+  padding-top: 185px;
+  padding-left: 684px;
   background-color: $grey;
   background-image: url("../img/aleyna-rentz.jpg");
   background-position: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+}
 
-  @media (min-width: $tablet-width) {
-    min-width: 768px;
-    height: 554px;
+@media (max-width: $tablet-width) {
+  .promo {
+    max-height: 554px;
     padding-top: 60px;
     padding-bottom: 83px;
     padding-left: 185px;
