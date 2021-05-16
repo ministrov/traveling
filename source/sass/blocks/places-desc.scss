@@ -4,6 +4,12 @@
   background-position: center top;
 }
 
+@media (max-width: $tablet-width) {
+  .places-desc {
+    background-image: none;
+  }
+}
+
 .places-desc__header {
   position: relative;
 }
@@ -30,6 +36,12 @@
   margin-right: 99px;
 }
 
+@media (max-width: $tablet-width) {
+  .places-desc__tab:last-child {
+    display: none;
+  }
+}
+
 .places-desc__tab a {
   font-size: 20px;
   font-weight: 500;
@@ -50,6 +62,12 @@
   display: flex;
 }
 
+@media (max-width: $tablet-width) {
+  .places-desc__wrapper {
+    flex-direction: column;
+  }
+}
+
 .places-desc__title {
   position: relative;
   margin-top: 110px;
@@ -57,6 +75,15 @@
   font-weight: 600;
   line-height: 90px;
   color: $darker-black;
+}
+
+@media (max-width: $tablet-width) {
+  .places-desc__title {
+    margin-top: 48px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 45px;
+  }
 }
 
 .places-desc__title::after {
@@ -69,6 +96,12 @@
   background-color: $buttons;
 }
 
+@media (max-width: $tablet-width) {
+  .places-desc__title::after {
+    display: none;
+  }
+}
+
 .places-desc__text {
   width: 370px;
   margin-top: 53px;
@@ -78,6 +111,14 @@
   color: $dark-black;
 }
 
+@media (max-width: $tablet-width) {
+  .places-desc__text {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
 .places-desc__btn {
   width: 250px;
   margin-top: 50px;
@@ -85,6 +126,12 @@
   padding-bottom: 20px;
   padding-left: 31px;
   text-transform: uppercase;
+}
+
+@media (max-width: $tablet-width) {
+  .places-desc__btn {
+    margin-top: 20px;
+  }
 }
 
 .places-desc__img-col {

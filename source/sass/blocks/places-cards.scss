@@ -8,6 +8,14 @@
   color: $darker-black;
 }
 
+@media (max-width: $tablet-width) {
+  .places-cards__title {
+    margin-left: 160px;
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
 .places-cards__title::before {
   position: absolute;
   content: "";
@@ -33,6 +41,13 @@
   color: $dark-grey;
 }
 
+@media (max-width: $tablet-width) {
+  .places-cards__text {
+    margin-left: 134px;
+    text-align: center;
+  }
+}
+
 .places-cards__list {
   display: flex;
   flex-wrap: wrap;
@@ -51,9 +66,27 @@
   margin-bottom: 97px;
 }
 
+@media (max-width: $tablet-width) {
+  .places-cards__item {
+    width: 288px;
+    height: 425px;
+    margin-right: 29px;
+    margin-bottom: 20px;
+  }
+  
+  .places-cards__item:nth-child(3n),
+  .places-cards__item:last-child {
+    margin-right: 0;
+  }
+}
+
 .places-cards__item:nth-child(3n),
 .places-cards__item:last-child {
   margin-right: 0;
+}
+
+.places-cards__img {
+  max-width: 100%;
 }
 
 .places-cards__block {

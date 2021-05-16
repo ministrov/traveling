@@ -9,6 +9,12 @@
   transform: translateY(-50%);
 }
 
+@media (max-width: $tablet-width) {
+  .review {
+    left: 0;
+  }
+}
+
 .review__title {
   position: relative;
   font-size: 30px;

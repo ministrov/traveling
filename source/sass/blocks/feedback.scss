@@ -17,6 +17,12 @@
   transform: translateY(-50%);
 }
 
+@media (max-width: $tablet-width) {
+  .feedback__form-col {
+    left: -23px;
+  }
+}
+
 .feedback__img-col {
   margin-right: auto;
 }

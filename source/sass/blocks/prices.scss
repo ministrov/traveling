@@ -3,6 +3,13 @@
   flex-direction: row-reverse;
 }
 
+@media (max-width: $tablet-width) {
+  .prices__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .prices__text-col {
   margin-top: 77px;
 }
