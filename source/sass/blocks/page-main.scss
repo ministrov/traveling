@@ -38,6 +38,12 @@
   margin-top: 138px;
 }
 
+@media (max-width: $tablet-width) {
+  .page-main__feedback {
+    margin-top: 125px;
+  }
+}
+
 .page-main__footer {
   margin-top: 170px;
 }

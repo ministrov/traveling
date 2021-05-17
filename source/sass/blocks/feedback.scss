@@ -1,30 +1,47 @@
 .feedback__wrapper {
-  position: relative;
   display: flex;
   flex-direction: row-reverse;
+  padding: 70px 0;
+  background-image: url("../img/anastasia-leonova.jpg");
+  background-repeat: no-repeat;
+  background-position: left 0;
+}
+
+
+@media (max-width: $tablet-width) {
+  .feedback__wrapper {
+    padding: 70px 55px 74px 55px;
+  }
 }
 
 .feedback__form-col {
-  position: absolute;
-  top: 50%;
-  left: 512px;
-  z-index: 12;
   width: 656px;
   height: 315px;
   padding: 50px;
   text-align: center;
   background-color: $white;
-  transform: translateY(-50%);
+  
 }
 
 @media (max-width: $tablet-width) {
   .feedback__form-col {
     left: -23px;
+    width: 658px;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
 .feedback__img-col {
   margin-right: auto;
+}
+
+@media (max-width: $tablet-width) {
+  .feedback__img-col {
+    margin-right: 0;
+    max-width: 768px;
+  }
 }
 
 .feedback__slogan {

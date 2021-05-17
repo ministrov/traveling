@@ -1,3 +1,12 @@
+@media (max-width: $tablet-width) {
+  .places-cards__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .places-cards__title {
   position: relative;
   width: 358px;
@@ -10,9 +19,9 @@
 
 @media (max-width: $tablet-width) {
   .places-cards__title {
-    margin-left: 160px;
     font-size: 30px;
     line-height: 45px;
+    text-align: center;
   }
 }
 
@@ -42,8 +51,7 @@
 }
 
 @media (max-width: $tablet-width) {
-  .places-cards__text {
-    margin-left: 134px;
+  .places-cards__text{
     text-align: center;
   }
 }
@@ -58,6 +66,15 @@
   list-style: none;
 }
 
+@media (max-width: $tablet-width) {
+  .places-cards__list{
+    padding-left: 61px;
+    padding-right: 61px;
+    justify-content: start;
+    
+  }
+}
+
 .places-cards__item {
   position: relative;
   width: 350px;
@@ -66,23 +83,27 @@
   margin-bottom: 97px;
 }
 
+.places-cards__item:nth-child(3n),
+.places-cards__item:last-child {
+    margin-right: 0;
+}
+
 @media (max-width: $tablet-width) {
   .places-cards__item {
     width: 288px;
-    height: 425px;
-    margin-right: 29px;
+    
+    margin-right: 0;
     margin-bottom: 20px;
   }
-  
-  .places-cards__item:nth-child(3n),
-  .places-cards__item:last-child {
-    margin-right: 0;
+    
+  .places-cards__item:nth-child(odd) {
+    margin-right: 28px;
   }
-}
 
-.places-cards__item:nth-child(3n),
-.places-cards__item:last-child {
-  margin-right: 0;
+  .places-cards__item:last-child {
+    margin-right: auto;
+    margin-left: auto;
+}
 }
 
 .places-cards__img {

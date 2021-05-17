@@ -73,7 +73,8 @@ a {
   margin: 0 auto; }
   @media (max-width: 768px) {
     .container {
-      width: 660px; } }
+      width: 726px;
+      margin: 0 auto; } }
 
 .main-header {
   max-height: 99px; }
@@ -108,10 +109,9 @@ a {
 
 @media (max-width: 768px) {
   .main-header__nav--open {
-    position: fixed;
+    position: absolute;
     display: block;
     width: 320px;
-    height: 568px;
     top: 0;
     background-color: #ffffff;
     box-sizing: border-box; }
@@ -220,6 +220,10 @@ a {
 .page-main__feedback {
   margin-top: 138px; }
 
+@media (max-width: 768px) {
+  .page-main__feedback {
+    margin-top: 125px; } }
+
 .page-main__footer {
   margin-top: 170px; }
 
@@ -242,7 +246,7 @@ a {
     padding-right: 185px; } }
 
 .promo__title {
-  width: 325px;
+  width: 470px;
   margin: 0;
   padding: 0;
   font-size: 55px;
@@ -305,6 +309,13 @@ a {
   .promo__btn::after {
     left: 200px; } }
 
+@media (max-width: 768px) {
+  .places-cards__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
 .places-cards__title {
   position: relative;
   width: 358px;
@@ -316,9 +327,9 @@ a {
 
 @media (max-width: 768px) {
   .places-cards__title {
-    margin-left: 160px;
     font-size: 30px;
-    line-height: 45px; } }
+    line-height: 45px;
+    text-align: center; } }
 
 .places-cards__title::before {
   position: absolute;
@@ -343,7 +354,6 @@ a {
 
 @media (max-width: 768px) {
   .places-cards__text {
-    margin-left: 134px;
     text-align: center; } }
 
 .places-cards__list {
@@ -355,6 +365,12 @@ a {
   padding: 0;
   list-style: none; }
 
+@media (max-width: 768px) {
+  .places-cards__list {
+    padding-left: 61px;
+    padding-right: 61px;
+    justify-content: start; } }
+
 .places-cards__item {
   position: relative;
   width: 350px;
@@ -362,19 +378,20 @@ a {
   margin-right: 60px;
   margin-bottom: 97px; }
 
-@media (max-width: 768px) {
-  .places-cards__item {
-    width: 288px;
-    height: 425px;
-    margin-right: 29px;
-    margin-bottom: 20px; }
-  .places-cards__item:nth-child(3n),
-  .places-cards__item:last-child {
-    margin-right: 0; } }
-
 .places-cards__item:nth-child(3n),
 .places-cards__item:last-child {
   margin-right: 0; }
+
+@media (max-width: 768px) {
+  .places-cards__item {
+    width: 288px;
+    margin-right: 0;
+    margin-bottom: 20px; }
+  .places-cards__item:nth-child(odd) {
+    margin-right: 28px; }
+  .places-cards__item:last-child {
+    margin-right: auto;
+    margin-left: auto; } }
 
 .places-cards__img {
   max-width: 100%; }
@@ -408,27 +425,22 @@ a {
 .places-desc__header {
   position: relative; }
 
-.places-desc__header::after {
-  position: absolute;
-  content: "";
-  top: 38px;
-  left: 0;
-  width: 899px;
-  height: 1px;
-  background-color: rgba(44, 46, 63, 0.3); }
-
 .places-desc__tabs {
   display: flex;
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  border-bottom: 1px solid rgba(44, 46, 63, 0.3); }
 
 .places-desc__tab {
-  margin-right: 99px; }
+  margin-right: 99px;
+  padding: 15px 0; }
 
 @media (max-width: 768px) {
   .places-desc__tab:last-child {
-    display: none; } }
+    display: none; }
+  .places-desc__tab:nth-child(4n) {
+    margin-right: 0; } }
 
 .places-desc__tab a {
   font-size: 20px;
@@ -445,6 +457,12 @@ a {
 
 .places-desc__wrapper {
   display: flex; }
+
+@media (max-width: 768px) {
+  .plsces-desc__text-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
 
 @media (max-width: 768px) {
   .places-desc__wrapper {
@@ -508,7 +526,21 @@ a {
   position: relative;
   flex-grow: 1;
   margin-top: 80px;
-  margin-left: 100px; }
+  margin-left: 100px;
+  background-image: url("../img/aleyna-rentz.jpg");
+  background-repeat: no-repeat; }
+
+@media (max-width: 768px) {
+  .places-desc__img-col {
+    width: 100%;
+    height: 415px;
+    margin-left: 0;
+    background-position: center;
+    background-size: 100%; } }
+
+@media (max-width: 768px) {
+  .places-desc__img {
+    width: 100%; } }
 
 .review {
   position: absolute;
@@ -522,7 +554,9 @@ a {
 
 @media (max-width: 768px) {
   .review {
-    left: 0; } }
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); } }
 
 .review__title {
   position: relative;
@@ -557,6 +591,10 @@ a {
   letter-spacing: -0.47px;
   color: #2c2e3f; }
 
+@media (max-width: 768px) {
+  .prices {
+    text-align: center; } }
+
 .prices__wrapper {
   display: flex;
   flex-direction: row-reverse; }
@@ -573,6 +611,10 @@ a {
   flex-grow: 1;
   width: 770px; }
 
+@media (max-width: 768px) {
+  .prices__list-col {
+    max-width: 660px; } }
+
 .prices__title {
   position: relative;
   margin: 0;
@@ -580,6 +622,11 @@ a {
   font-weight: 600;
   line-height: 90px;
   color: #2c2e3f; }
+
+@media (max-width: 768px) {
+  .prices__title {
+    font-size: 30px;
+    line-height: 50px; } }
 
 .prices__title::before {
   position: absolute;
@@ -590,12 +637,21 @@ a {
   height: 2.92px;
   background-color: #fe7865; }
 
+@media (max-width: 768px) {
+  .prices__title::before {
+    display: none; } }
+
 .prices__text {
   width: 309px;
   margin-top: 53px;
   font-size: 16px;
   line-height: 27px;
   color: rgba(44, 46, 63, 0.7); }
+
+@media (max-width: 768px) {
+  .prices__text {
+    width: 619px;
+    text-align: center; } }
 
 .prices__slogan {
   display: inline-block;
@@ -605,12 +661,25 @@ a {
   line-height: 34px;
   color: #141517; }
 
+@media (max-width: 768px) {
+  .prices__slogan {
+    font-size: 18px;
+    line-height: 34px; } }
+
 .prices__phone {
   position: relative;
   margin-top: 13px;
   font-size: 20px;
   line-height: 32px;
   color: #000000; }
+
+@media (max-width: 768px) {
+  .prices__phone {
+    font-size: 18px;
+    line-height: 32px;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    color: #fe7865; } }
 
 .prices__phone::before {
   position: absolute;
@@ -621,6 +690,10 @@ a {
   height: 30px;
   background-image: url("../img/phone2.svg");
   background-repeat: no-repeat; }
+
+@media (max-width: 768px) {
+  .prices__phone::before {
+    display: none; } }
 
 .prices__list {
   display: flex;
@@ -637,8 +710,19 @@ a {
   .prices__item:hover {
     border: 3px solid #fe7865; }
 
+@media (max-width: 768px) {
+  .prices__item {
+    padding-top: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0; } }
+
 .prices__item:first-child {
   margin-right: 30px; }
+
+@media (max-width: 768px) {
+  .prices__item:first-child {
+    margin-right: 50px; } }
 
 .prices__item:last-child {
   margin-right: 111px; }
@@ -647,12 +731,21 @@ a {
   margin-top: 59px;
   list-style: none; }
 
+@media (max-width: 768px) {
+  .prices__item > ul {
+    padding-left: 35px;
+    padding-right: 25px; } }
+
 .prices__item ul li {
   position: relative;
   margin-bottom: 15px;
   font-size: 15px;
   line-height: 30px;
   color: #2c2e3f; }
+
+@media (max-width: 768px) {
+  .prices__item ul li {
+    width: 218px; } }
 
 .prices__item ul li::before {
   position: absolute;
@@ -678,9 +771,18 @@ a {
   .prices__item-title:hover {
     color: #fe7865; }
 
+@media (max-width: 768px) {
+  .prices__item-title > span {
+    display: block; } }
+
 .prices__item-text {
   width: 284px;
   margin-top: 40px; }
+
+@media (max-width: 768px) {
+  .prices__item-text {
+    width: 248px;
+    margin: 0 auto; } }
 
 .prices__btn {
   width: 280px;
@@ -692,32 +794,51 @@ a {
   text-align: center;
   text-transform: uppercase; }
 
+@media (max-width: 768px) {
+  .prices__btn {
+    width: 100%; } }
+
 .prices__item:first-child .prices__btn {
   margin-top: 40px; }
 
+@media (max-width: 768px) {
+  .prices__item:first-child .prices__btn {
+    margin-top: 69px; } }
+
 .feedback__wrapper {
-  position: relative;
   display: flex;
-  flex-direction: row-reverse; }
+  flex-direction: row-reverse;
+  padding: 70px 0;
+  background-image: url("../img/anastasia-leonova.jpg");
+  background-repeat: no-repeat;
+  background-position: left 0; }
+
+@media (max-width: 768px) {
+  .feedback__wrapper {
+    padding: 70px 55px 74px 55px; } }
 
 .feedback__form-col {
-  position: absolute;
-  top: 50%;
-  left: 512px;
-  z-index: 12;
   width: 656px;
   height: 315px;
   padding: 50px;
   text-align: center;
-  background-color: #ffffff;
-  transform: translateY(-50%); }
+  background-color: #ffffff; }
 
 @media (max-width: 768px) {
   .feedback__form-col {
-    left: -23px; } }
+    left: -23px;
+    width: 658px;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px; } }
 
 .feedback__img-col {
   margin-right: auto; }
+
+@media (max-width: 768px) {
+  .feedback__img-col {
+    margin-right: 0;
+    max-width: 768px; } }
 
 .feedback__slogan {
   margin: 0;
@@ -765,13 +886,30 @@ input:invalid {
 .main-footer__wrapper {
   display: flex; }
 
+@media (max-width: 768px) {
+  .main-footer__wrapper {
+    flex-wrap: wrap; } }
+
 .main-footer__seciton {
   flex-grow: 1;
   width: 25%;
   margin-right: 82px; }
 
+@media (max-width: 768px) {
+  .main-footer__section {
+    width: 35%;
+    padding: 30px; }
+  .main-footer__section:last-child {
+    width: 35%;
+    margin-top: 60px;
+    margin-right: 0; } }
+
 .main-footer__seciton-contacts {
   margin-right: 94px; }
+
+@media (max-width: 768px) {
+  .main-footer__seciton-contacts {
+    margin-right: 20px; } }
 
 .main-footer__section-title {
   width: 301px;
@@ -799,6 +937,11 @@ input:invalid {
   font-size: 14px;
   font-weight: 500;
   color: rgba(20, 21, 23, 0.5); }
+
+@media (max-width: 768px) {
+  .main-footer__section-text {
+    width: 726px;
+    text-align: center; } }
 
 .contacts__list {
   margin: 0;
