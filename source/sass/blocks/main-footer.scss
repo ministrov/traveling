@@ -19,11 +19,16 @@
     width: 35%;
     padding: 30px;
   }
+}
 
-  .main-footer__section:last-child {
-    width: 35%;
+@media (max-width: $tablet-width) {
+  .main-footer__seciton--third{
     margin-top: 60px;
-    margin-right: 0;
+  }
+
+  .main-footer__seciton--third h2{
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -43,6 +48,12 @@
   font-weight: 600;
   line-height: 32px;
   color: $dark-black;
+}
+
+@media (max-width: $tablet-width) {
+  .main-footer__section-title {
+    margin: 0;
+  }
 }
 
 .main-footer__section-list {
@@ -69,7 +80,7 @@
 
 @media (max-width: $tablet-width) {
   .main-footer__section-text {
-    width: 726px;
+    width: 100%;
     text-align: center;
   }
 }

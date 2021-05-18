@@ -19,6 +19,7 @@
 
 @media (max-width: $tablet-width) {
   .places-cards__title {
+    margin: 0;
     font-size: 30px;
     line-height: 45px;
     text-align: center;
@@ -41,6 +42,12 @@
   }
 }
 
+@media (max-width: $mobile-width) {
+  .places-cards__title {
+    width: 288px;
+  }
+}
+
 .places-cards__text {
   width: 361px;
   margin-top: 64px;
@@ -51,8 +58,15 @@
 }
 
 @media (max-width: $tablet-width) {
-  .places-cards__text{
+  .places-cards__text {
+    margin-top: 20px;
     text-align: center;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .places-cards__text {
+    width: 288px;
   }
 }
 
@@ -68,10 +82,23 @@
 
 @media (max-width: $tablet-width) {
   .places-cards__list{
+    margin-top: 40px;
     padding-left: 61px;
     padding-right: 61px;
     justify-content: start;
     
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .places-cards__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -91,7 +118,6 @@
 @media (max-width: $tablet-width) {
   .places-cards__item {
     width: 288px;
-    
     margin-right: 0;
     margin-bottom: 20px;
   }
@@ -103,7 +129,13 @@
   .places-cards__item:last-child {
     margin-right: auto;
     margin-left: auto;
+  }
 }
+
+@media (max-width: $mobile-width) {
+  .places-cards__item:nth-child(odd) {
+    margin-right: 0;
+  }
 }
 
 .places-cards__img {

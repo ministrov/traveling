@@ -17,7 +17,6 @@
 
 @media (max-width: $tablet-width) {
   .main-header__wrapper {
-    // max-width: 768px;
     margin-top: 0;
     height: 50px;
   }
@@ -47,6 +46,7 @@
     display: block;
     width: 320px;
     top: 0;
+    left: 427px;
     background-color: $white;
     box-sizing: border-box;
   }
@@ -145,4 +145,22 @@
 
 .main-header__cross {
   display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .main-header__cross {
+    position: relative;
+    display: block;
+    background-color: $white;
+  }
+
+  .main-header__cross::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: tomato;
+  }
 }

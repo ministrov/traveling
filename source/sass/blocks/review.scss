@@ -17,6 +17,16 @@
   }
 }
 
+@media (max-width: $mobile-width) {
+  .review {
+    max-width: 268px;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    transform: none;
+  }
+}
+
 .review__title {
   position: relative;
   font-size: 30px;
