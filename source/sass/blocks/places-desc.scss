@@ -1,0 +1,186 @@
+.places-desc {
+  background-image: url("../img/map.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+@media (max-width: $tablet-width) {
+  .places-desc {
+    background-image: none;
+  }
+}
+
+.places-desc__header {
+  position: relative;
+}
+
+
+.places-desc__tabs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  border-bottom: 1px solid rgba(44, 46, 63, 0.3);
+}
+
+.places-desc__tab {
+  margin-right: 99px;
+  padding: 15px 0;
+}
+
+@media (max-width: $tablet-width) {
+  .places-desc__tab:last-child {
+    display: none;
+  }
+
+  .places-desc__tab:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .places-desc__tab:nth-child(3),
+  .places-desc__tab:nth-child(4),
+  .places-desc__tab:nth-child(5) {
+    display: none;
+  }
+}
+
+.places-desc__tab a {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.415px;
+  color: $light-grey;
+}
+
+.places-desc__tab--active a {
+  color: $buttons;
+}
+
+.places-desc__tab:last-child {
+  margin-right: 0;
+}
+
+.places-desc__wrapper {
+  display: flex;
+}
+
+@media (max-width: $tablet-width) {
+  .plsces-desc__text-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .places-desc__wrapper {
+    flex-direction: column;
+  }
+}
+
+.places-desc__title {
+  position: relative;
+  margin-top: 110px;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 90px;
+  color: $darker-black;
+}
+
+@media (max-width: $tablet-width) {
+  .places-desc__title {
+    margin-top: 48px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 45px;
+  }
+}
+
+.places-desc__title::after {
+  position: absolute;
+  content: "";
+  top: 108px;
+  left: 0;
+  width: 175px;
+  height: 2.92px;
+  background-color: $buttons;
+}
+
+@media (max-width: $tablet-width) {
+  .places-desc__title::after {
+    display: none;
+  }
+}
+
+.places-desc__text {
+  width: 370px;
+  margin-top: 53px;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.47px;
+  color: $dark-black;
+}
+
+@media (max-width: $tablet-width) {
+  .places-desc__text {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
+.places-desc__btn {
+  width: 250px;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 31px;
+  text-transform: uppercase;
+}
+
+@media (max-width: $tablet-width) {
+  .places-desc__btn {
+    margin-top: 20px;
+    margin-left: 253px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .places-desc__btn {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+.places-desc__img-col {
+  position: relative;
+  flex-grow: 1;
+  margin-top: 80px;
+  margin-left: 100px;
+  background-image: url("../img/aleyna-rentz.jpg");
+  background-repeat: no-repeat;
+}
+
+@media (max-width: $tablet-width) {
+  .places-desc__img-col {
+    width: 100%;
+    height: 415px;
+    margin-top: 30px;
+    margin-left: 0;
+    background-position: center;
+    background-size: 100%;
+  }
+}
+
+.places-desc__img {
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
+

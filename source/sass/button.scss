@@ -1,0 +1,19 @@
+.button {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  vertical-align: middle;
+  color: $white;
+  background-color: $buttons;
+  padding: 30px 0;
+
+  &:hover {
+    background-color: $orange;
+  }
+
+  @media (max-width: $tablet-width) {
+     padding: 19px 0;
+     
+  }
+}

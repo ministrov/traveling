@@ -1,0 +1,39 @@
+.contacts__list {
+  margin: 0;
+  margin-top: 20px;
+  margin-left: 36px;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts__item {
+  position: relative;
+}
+
+.contacts__link--email::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -35px;
+  width: 26px;
+  height: 20px;
+  background-image: url("../img/email.svg");
+  background-repeat: no-repeat;
+}
+
+.contacts__link--phone::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -30px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/phone3.svg");
+  background-repeat: no-repeat;
+}
+
+.contacts__link {
+  font-size: 14px;
+  line-height: 17px;
+  color: $buttons;
+}

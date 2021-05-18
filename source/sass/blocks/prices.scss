@@ -1,0 +1,318 @@
+@media (max-width: $tablet-width) {
+  .prices {
+    text-align: center;
+  }
+}
+
+.prices__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+@media (max-width: $tablet-width) {
+  .prices__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.prices__text-col {
+  width: 309px;
+  margin-top: 77px;
+}
+
+@media (max-width: $tablet-width) {
+  .prices__text-col {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.prices__list-col {
+  flex-grow: 1;
+  width: 770px;
+}
+
+@media (max-width: $tablet-width) {
+  .prices__list-col {
+    max-width: 660px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .prices__list-col {
+    max-width: 288px;
+  }
+}
+
+.prices__title {
+  position: relative;
+  margin: 0;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 90px;
+  color: $darker-black;
+}
+
+@media (max-width: $tablet-width) {
+  .prices__title {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+.prices__title::before {
+  position: absolute;
+  content: "";
+  top: 96px;
+  left: 0;
+  width: 172px;
+  height: 2.92px;
+  background-color: $buttons;
+}
+
+@media (max-width: $tablet-width) {
+  .prices__title::before {
+    display: none;
+  }
+}
+
+.prices__text {
+  margin-top: 53px;
+  font-size: 16px;
+  line-height: 27px;
+  color: $dark-grey;
+}
+
+@media (max-width: $tablet-width) {
+  .prices__text {
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
+.prices__slogan {
+  display: inline-block;
+  margin-top: 60px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 34px;
+  color: $dark-black;
+}
+
+@media (max-width: $tablet-width) {
+  .prices__slogan {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 34px;
+  }
+}
+
+.prices__phone {
+  position: relative;
+  margin-top: 13px;
+  font-size: 20px;
+  line-height: 32px;
+  color: $black;
+}
+
+@media (max-width: $tablet-width) {
+  .prices__phone {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 32px;
+    text-decoration-line: underline;
+    color: $buttons;
+  }
+}
+
+.prices__phone::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -34px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/phone2.svg");
+  background-repeat: no-repeat;
+}
+
+@media (max-width: $tablet-width) {
+  .prices__phone::before {
+    display: none;
+  }
+}
+
+.prices__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: $mobile-width) {
+  .prices__list {
+    flex-direction: column;
+  }
+}
+
+.prices__item {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;  
+  border: 3px solid $light-grey;
+
+  &:hover {
+    border: 3px solid $buttons;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .prices__item {
+    padding-top: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+}
+
+.prices__item:first-child {
+  margin-right: 30px;
+}
+
+@media (max-width: $tablet-width) {
+  .prices__item:first-child {
+    margin-right: 50px;
+  }  
+}
+
+@media (max-width: $mobile-width) {
+  .prices__item:first-child {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }  
+}
+
+.prices__item:last-child {
+  margin-right: 111px;
+}
+
+@media (max-width: $mobile-width) {
+  .prices__item:last-child {
+    margin-right: 0;
+  }
+}
+
+.prices__item > ul {
+  margin-top: 59px;
+  list-style: none;
+}
+
+@media (max-width: $tablet-width) {
+  .prices__item > ul {
+    margin-top: 31px;
+    padding-left: 35px;
+    padding-right: 25px;
+  }
+}
+
+.prices__item ul li {
+  position: relative;
+  margin-bottom: 15px;
+  font-size: 15px;
+  line-height: 30px;
+  color: $darker-black;
+}
+
+@media (max-width: $tablet-width) {
+  .prices__item ul li {
+    width: 218px;
+    padding-right: 7px;
+    text-align: left;
+  }
+}
+
+.prices__item ul li::before {
+  position: absolute;
+  content: "";
+  top: 14px;
+  left: -42px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/tick2.svg");
+  background-repeat: no-repeat;
+}
+
+@media (max-width: $tablet-width) {
+  .prices__item ul li:before {
+    top: 9px;
+    left: -24px;
+  }
+}
+
+.prices__item ul li:hover::before {
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+}
+
+.prices__item-title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 38px;
+  color: $dark-black-mix;
+
+  &:hover {
+    color: $buttons;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .prices__item-title > span {
+    display: block;
+  }
+}
+
+.prices__item-text {
+  width: 284px;
+  margin-top: 40px;
+}
+
+@media (max-width: $tablet-width) {
+  .prices__item-text {
+    width: 248px;
+    margin: 0 auto;
+  }
+}
+
+.prices__btn {
+  width: 280px;
+  margin-top: 54px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: $tablet-width) {
+  .prices__btn {
+    width: 100%;
+  }
+}
+
+.prices__item:first-child .prices__btn {
+  margin-top: 40px;
+}
+
+@media (max-width: $tablet-width) {
+  .prices__item:first-child .prices__btn {
+    margin-top: 69px;
+  }
+}
