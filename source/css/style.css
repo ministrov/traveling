@@ -127,6 +127,10 @@ a {
   .main-header__right-block .main-header__burger {
     display: none; } }
 
+@media (max-width: 320px) {
+  .main-header__nav--open {
+    left: 0; } }
+
 .main-header__list {
   display: flex;
   margin: 0;
@@ -251,18 +255,18 @@ a {
   .page-main__feedback {
     margin-top: 50px; } }
 
-.page-main__footer {
+.page-main__main-footer {
   margin-top: 170px; }
 
 @media (max-width: 768px) {
-  .page-main__footer {
+  .page-main__main-footer {
     margin-top: 80px; } }
 
 .promo {
   height: 860px;
   padding-top: 185px;
   padding-left: 684px;
-  background-color: #e5e5e5;
+  background-color: #ffffff;
   background-image: url("../img/aleyna-rentz.jpg");
   background-position: 100%;
   background-size: cover;
@@ -281,8 +285,9 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-height: 235px;
-    padding: 0; } }
+    height: auto;
+    padding: 0;
+    background-size: 100% 235px; } }
 
 .promo__title {
   width: 470px;
@@ -609,6 +614,7 @@ a {
 
 @media (max-width: 320px) {
   .places-desc__btn {
+    width: 100%;
     margin-right: 0;
     margin-left: 0;
     padding-left: 0;
@@ -617,6 +623,7 @@ a {
 .places-desc__img-col {
   position: relative;
   flex-grow: 1;
+  max-width: 430px;
   margin-top: 80px;
   margin-left: 100px;
   background-image: url("../img/aleyna-rentz.jpg");
@@ -624,12 +631,16 @@ a {
 
 @media (max-width: 768px) {
   .places-desc__img-col {
-    width: 100%;
+    max-width: 726px;
     height: 415px;
     margin-top: 30px;
     margin-left: 0;
     background-position: center;
     background-size: 100%; } }
+
+@media (max-width: 320px) {
+  .places-desc__img-col {
+    max-width: 288px; } }
 
 @media (max-width: 768px) {
   .places-desc__img {
@@ -1065,6 +1076,10 @@ input:invalid {
   .main-footer__wrapper {
     flex-wrap: wrap; } }
 
+@media (max-width: 320px) {
+  .main-footer__wrapper {
+    flex-direction: column; } }
+
 .main-footer__seciton {
   flex-grow: 1;
   width: 25%;
@@ -1075,6 +1090,14 @@ input:invalid {
     width: 35%;
     padding: 30px; } }
 
+@media (max-width: 320px) {
+  .main-footer__seciton {
+    width: 288px;
+    margin-right: 0;
+    margin-bottom: 50px; }
+  .main-footer__seciton:last-child {
+    margin-bottom: 0; } }
+
 @media (max-width: 768px) {
   .main-footer__seciton--third {
     margin-top: 60px; }
@@ -1082,12 +1105,20 @@ input:invalid {
     width: 100%;
     text-align: center; } }
 
+@media (max-width: 320px) {
+  .main-footer__seciton--third {
+    margin-top: 0; } }
+
 .main-footer__seciton-contacts {
   margin-right: 94px; }
 
 @media (max-width: 768px) {
   .main-footer__seciton-contacts {
     margin-right: 20px; } }
+
+@media (max-width: 320px) {
+  .main-footer__seciton-contacts {
+    margin-right: 0; } }
 
 .main-footer__section-title {
   width: 301px;
@@ -1100,6 +1131,10 @@ input:invalid {
   .main-footer__section-title {
     margin: 0; } }
 
+@media (max-width: 320px) {
+  .main-footer__section-title {
+    text-align: center; } }
+
 .main-footer__section-list {
   margin: 0;
   padding: 0;
@@ -1107,12 +1142,22 @@ input:invalid {
   -moz-columns: 3;
        columns: 3; }
 
+@media (max-width: 320px) {
+  .main-footer__section-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px; } }
+
 .main-footer__section-item {
   margin-right: 30px;
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 17px;
   color: rgba(20, 21, 23, 0.5); }
+
+@media (max-width: 320px) {
+  .main-footer__section-item {
+    margin-right: 20px; } }
 
 .main-footer__section-text {
   width: 320px;
@@ -1176,7 +1221,7 @@ input:invalid {
   margin-top: 70px;
   background-color: #fbf8f8; }
 
-.modal-form__wrapper {
+.modal__form-wrapper {
   display: flex;
   flex-direction: row-reverse; }
 
