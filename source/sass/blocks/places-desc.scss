@@ -151,6 +151,7 @@
 
 @media (max-width: $mobile-width) {
   .places-desc__btn {
+    width: 100%;
     margin-right: 0;
     margin-left: 0;
     padding-left: 0;
@@ -161,6 +162,7 @@
 .places-desc__img-col {
   position: relative;
   flex-grow: 1;
+  max-width: 430px;
   margin-top: 80px;
   margin-left: 100px;
   background-image: url("../img/aleyna-rentz.jpg");
@@ -169,12 +171,18 @@
 
 @media (max-width: $tablet-width) {
   .places-desc__img-col {
-    width: 100%;
+    max-width: 726px;
     height: 415px;
     margin-top: 30px;
     margin-left: 0;
     background-position: center;
     background-size: 100%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .places-desc__img-col {
+    max-width: 288px;
   }
 }
 
